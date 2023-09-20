@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ufqt
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0018-tenant/ci10t-776-0018-app/devfile-sample-ufqt@sha256:37a050e5eefb583055dea7a5f3b0d5ff742cbc16308048b90005c5ede5509d64
+        name: my-nodejs
+        resources: {}
+status: {}
